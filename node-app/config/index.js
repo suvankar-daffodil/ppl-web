@@ -1,0 +1,8 @@
+module.exports = {
+  IS_DEV: process.env.IS_DEV,
+  SESSION_KEY: process.env.SESSION_KEY,
+  DB_URL: process.env.DB_URL,
+  GOOGLE_AUTH_CALLBACK_URL: process.env.GOOGLE_AUTH_CALLBACK_URL,
+  GOOGLE_AUTH_CLIENT_ID: process.env.GOOGLE_AUTH_CLIENT_ID,
+  GOOGLE_AUTH_CLIENT_SECRET: process.env.GOOGLE_AUTH_CLIENT_SECRET,
+};

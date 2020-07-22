@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 let postSchema = mongoose.Schema(
   {
@@ -10,13 +10,11 @@ let postSchema = mongoose.Schema(
     date: String,
     time: String,
     likes: [String],
-    comments: [{ name: String, body: String, picture: String }]
+    comments: [{ name: String, body: String, picture: String }],
   },
   {
-    versionKey: false
+    versionKey: false,
   }
 );
 
-let Post = mongoose.model("post", postSchema);
-
-module.exports = Post;
+module.exports = mongoose.model('post', postSchema);
